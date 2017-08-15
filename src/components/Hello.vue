@@ -1,53 +1,62 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+   <v-tabs active-tab-key="tab1" type="editable-card" @add="onAdd" @remove="onRemove">
+        <v-tab-pane v-for="tabPane in tabPanes" :tab-key="tabPane.key" :key="tabPane.key" :tab="tabPane.tab">{{ tabPane.content }}</v-tab-pane>
+   </v-tabs>
 </template>
 
 <script>
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+ export default {
+    data() {
+        return {
+            keyIndex: 1,
+            tabPanes: [
+                {key: 'tab1', tab: '选项卡1', content: '选项卡1的内容'},
+                {key: 'tab2', tab: '选项卡2', content: '选项卡2的内容'},
+                {key: 'tab3', tab: '选项卡3', content: '选项卡3的内容'},
+                {key: 'tab4', tab: '选项卡4', content: '选项卡4的内容'},
+                {key: 'tab5', tab: '选项卡5', content: '选项卡5的内容'}
+            ]
+        }
+    },
+    methods: {
+        onAdd() {
+            this.tabPanes.push({
+                key: 'newTab' + this.keyIndex,
+                tab: '新选项卡' + this.keyIndex,
+                content: '新选项卡' + this.keyIndex++ + '内容'
+            });
+        },
+        onRemove(tabKey) {
+            for (let i = 0; i < this.tabPanes.length; i++) {
+                if (this.tabPanes[i].key == tabKey) {
+                    this.tabPanes.splice(i, 1);
+                    break;
+                }
+            }
+        }
     }
-  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+  h1,
+  h2 {
+    font-weight: normal;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
 
-a {
-  color: #42b983;
-}
+  a {
+    color: #42b983;
+  }
+
 </style>

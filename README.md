@@ -1,6 +1,8 @@
 # vue-antd-admin
 
 > A Vue.js project
+* https://github.com/vuejs/vue  
+* https://github.com/FE-Driver/vue-beauty
 
 ## Build Setup
 
