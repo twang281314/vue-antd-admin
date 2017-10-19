@@ -1,32 +1,14 @@
 # vue-antd-admin
 
-> A Vue.js project
-* https://github.com/vuejs/vue  
-* https://github.com/FE-Driver/vue-beauty
 
-## Build Setup
+##### 步骤/Steps:
 
-``` bash
-# install dependencies
-npm install
+    npm i
+    npm run dev
 
-# serve with hot reload at localhost:8080
-npm run dev
+https://github.com/vuejs/vue  
+https://github.com/ElemeFE/v-charts  
+https://github.com/FE-Driver/vue-beauty  
 
-# build for production with minification
-npm run build
+https://fe-driver.github.io/vue-beauty/#/components/button  
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
