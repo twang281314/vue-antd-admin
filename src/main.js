@@ -1,6 +1,6 @@
 'use strict'
 import Vue from 'vue'
-import App from './views/App.vue'
+import App from './components/App.vue'
 import 'vue-beauty/package/style/vue-beauty.min.css'
 import vueBeauty from 'vue-beauty'
 import VCharts from 'v-charts'
