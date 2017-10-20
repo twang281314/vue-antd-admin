@@ -10,7 +10,7 @@
 import lib from "../assets/js/lib.js"
 export default {
   props: ['refresh'],
-  data() {
+  data: function() {
     return {
       update: "",
            groupOpt: [{
