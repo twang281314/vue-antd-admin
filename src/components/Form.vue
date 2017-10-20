@@ -27,8 +27,6 @@
             <v-button type="ghost" @click.prevent="resetForm('ruleForm')">重置</v-button>
         </v-form-item>
     </v-form>
-     <h1>产品--苹果</h1>
-     <h4>最近一次刷新：{{update}}</h4>
    </div>
 </template>
 <script>

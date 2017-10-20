@@ -1,8 +1,6 @@
 <template>
    <div>
        <mavon-editor v-model="value"/>
-     <h1>产品--安卓</h1>
-     <h4>最近一次刷新：{{update}}</h4>
    </div>
 </template>
 <script>

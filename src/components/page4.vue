@@ -1,9 +1,7 @@
 <template>
    <div>
       <v-select style="width: 200px" :data="groupOpt" :value="'lp'"></v-select>
-    <v-select style="width: 200px" multiple :data="groupOpt" :value="['lp']"></v-select>
-     <h1>关于</h1>
-     <h4>最近一次刷新：{{update}}</h4>
+      <v-select style="width: 200px" multiple :data="groupOpt" :value="['lp']"></v-select> 
    </div>
 </template>
 <script>

@@ -28,13 +28,13 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 https://github.com/vuejs/vue  
 https://github.com/vuejs/vue-router
-https://github.com/axios/axios
-https://github.com/FE-Driver/vue-beauty  
-https://github.com/ElemeFE/v-charts  
-https://github.com/hinesboy/mavonEditor
+https://github.com/axios/axios  
+https://github.com/FE-Driver/vue-beauty    
+https://github.com/ElemeFE/v-charts    
+https://github.com/hinesboy/mavonEditor  
 
-https://cn.vuejs.org/v2/guide/
-https://router.vuejs.org/zh-cn/
-https://fe-driver.github.io/vue-beauty/#/components/button  
-https://elemefe.github.io/v-charts/#/
-https://www.sass.hk/docs/
+https://cn.vuejs.org/v2/guide/  
+https://router.vuejs.org/zh-cn/   
+https://fe-driver.github.io/vue-beauty/#/components/button    
+https://elemefe.github.io/v-charts/#/  
+https://www.sass.hk/docs/   
